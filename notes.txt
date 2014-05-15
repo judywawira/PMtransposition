@@ -1,0 +1,43 @@
+****************
+VERSION 2 FINAL
+---------------
+#b1dobJames
+#c1dobJames
+#b3c3y2James
+#c3dbmbJames
+#b3dbmbJames
+
+=== b1dobJames=====
+226679
+175 69 1843 -fntomidcount,lntofncount,lntomidcount
+2067
+all 3 names = 5
+two names = 15
+
+=====c1dobJames====
+622987
+328 150 3834 -fntomidcount,lntofncount,lntomidcount
+4270
+all 3 names = 8
+two names = 34
+
+====b3c3y2James=====
+424299
+2649 1638 28418 -fntomidcount,lntofncount,lntomidcount
+32245
+all 3 names = 11
+two names =449
+
+====c3dbmbJames======
+627709
+2695 1925 35174-fntomidcount,lntofncount,lntomidcount
+39718
+all 3 names = 4
+two names = 72
+
+=====b3dbmbJames======
+973909
+3127 1508 29308-fntomidcount,lntofncount,lntomidcount
+33839
+all 3 names = 5
+two names = 99

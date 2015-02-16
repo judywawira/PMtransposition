@@ -7,9 +7,10 @@ __author__ = 'judywawira'
 #b3dbmbJames
 
 import pandas as pd
-infile = '/Users/judywawira/Electives/working/b1dobJames'
-outfile= "/Users/judywawira/Electives/working/transposed_b1dobJames.csv"
-block ='b1dobJames'
+#infile = '/Users/judywawira/Electives/working/b1dobJames'
+infile = '/linkage/transformation_manual_review/new calculation output/new_output_with_header.txt'
+outfile = '/linkage/transformation_manual_review/new calculation output/new_output_with_header.txt.out'
+block = 'all'
 
 def gettransposition(infile,outfile):
     """
@@ -70,18 +71,19 @@ def transpositioncounts (fntomidcount,lntofncount,lntomidcount):
     dfcount['fntomid'] = fntomidcount
     dfcount['lntomid'] = lntomidcount
     dfcount['lntofn'] = lntofncount
-    outfile = str('/Users/judywawira/Electives/working/count/') + block +'.csv'
+    outfile = str('/linkage/transformation_manual_review/new calculation output/') + block +'.csv'
     dfcount.to_csv(outfile,sep='|')
 
 def writepreprocessedfile(infile):
     """
     Method to select the rows with transposed values and write them out into a new CSV
     """
-    block = 'b1dobJames'
+    block = 'all'
     df = pd.read_csv(infile,delimiter='|')
     mf = df[df['transposed']==1]
     print len(mf.index)
-    outfile = str('/Users/judywawira/Electives/working/TransposedBlocks/')+ block +'.csv'
+    outfile = '/linkage/transformation_manual_review/new calculation output/new_output_with_header.txt.out'
+    #outfile = str('/linkage/transformation_manual_review/new calculation output/')+ block + '.csv'
     mf.to_csv(outfile,sep='|')
 
 gettransposition(infile,outfile)
